@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 60px; /* Sidebar minimizada */
+    background-color: #000000;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px; /* Sidebar expandida al hacer hover */
+}
+
+.sidebar h4 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0; /* Oculto en modo minimizado */
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover h4 {
+    opacity: 1; /* Visible al expandirse */
+}
+
+.sidebar a {
+    color: #adb5bd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background 0.3s, padding-left 0.3s;
+    padding-left: 10px;
+    margin-bottom: 20px; /* Espacio entre íconos */
+}
+
+.sidebar a i {
+    width: 30px; /* Aumenta el ancho para el ícono */
+    font-size: 1.5rem; /* Aumenta el tamaño del ícono */
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #2c2c12;
+    color: #fff;
+}
+
+.sidebar a span {
+    display: none; /* Oculto en modo minimizado */
+    margin-left: 10px;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover a span {
+    display: inline; /* Visible al expandirse */
+    opacity: 1;
+}
+
+.content {
+    margin-left: 60px; /* Ajustado a la barra lateral minimizada */
+    padding: 20px;
+    width: calc(100% - 60px);
+    transition: margin-left 0.3s, width 0.3s;
+}
+
+.sidebar:hover ~ .content {
+    margin-left: 200px; /* Ajustado a la barra lateral expandida */
+    width: calc(100% - 200px);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
