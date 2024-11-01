@@ -16,7 +16,7 @@
             <h4 class="text-center">Qhatumana</h4>
             <a href="#" class="tab-link" data-target="ventas">
                 <i class="fas fa-chart-line"></i>
-                <span> Ventas</span>
+                <span>Ventas</span>
             </a>
             <a href="#" class="tab-link" data-target="clientes">
                 <i class="fas fa-users"></i>
@@ -39,13 +39,14 @@
         <!-- Main Content -->
         <div class="content">
             <div id="ventas" class="tab-content active">
-                <h1>Ventas</h1>
+                <h1 style="text-align: center;">💲 Ventas 💲</h1>
+                <br>
 
                 <!-- Cards de estadísticas y reloj organizados en una fila -->
                 <div class="row mb-4">
                     <div class="col-md-4">
                         <div class="card text-bg-dark mb-3" style="text-align: center;">
-                            <div class="card-header">Total Ventas</div>
+                            <div class="card-header">📌 Total Ventas 📌</div>
                             <div class="card-body">
                                 <h5 class="card-title">$10,000</h5>
                                 <p class="card-text">Ventas totales en el mes.</p>
@@ -54,7 +55,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card text-bg-dark mb-3" style="text-align: center;">
-                            <div class="card-header">Clientes Nuevos</div>
+                            <div class="card-header">👤 Clientes Nuevos 👤</div>
                             <div class="card-body">
                                 <h5 class="card-title">150</h5>
                                 <p class="card-text">Nuevos clientes este mes.</p>
@@ -63,7 +64,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card text-bg-dark mb-3" style="text-align: center;">
-                            <div class="card-header">Reloj Actual</div>
+                            <div class="card-header">⏰ Reloj Actual ⏰</div>
                             <div class="card-body">
                                 <h5 class="card-title" id="reloj"></h5>
                                 <p class="card-text" id="fecha"></p>
@@ -75,8 +76,8 @@
                 <!-- Gráfico de Ventas en un card separado -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="card mb-3">
-                            <div class="card-header">Gráfico de Ventas</div>
+                        <div class="card text-bg-dark mb-3">
+                            <div class="card-header">📋 Gráfico de Ventas 📋</div>
                             <div class="card-body">
                                 <canvas id="ventasChart" style="max-height: 300px;"></canvas>
                             </div>
@@ -85,9 +86,10 @@
                 </div>
             </div>
             <div id="clientes" class="tab-content">
-                <h1>Clientes</h1>
-                <div class="border p-3">
-                    <h2>Lista de Clientes</h2>
+                <center><h1>👤 Clientes 👤</h1></center>
+                <div class="border p-4">
+                    <center><h2>✏️ Lista de Clientes ✏️</h2></center>
+                    <button class="btn btn-outline-primary" style="margin: 10px;">✅ Agregar</button>
                     <ul class="list-group">
                         <li class="list-group-item">Cliente 1</li>
                         <li class="list-group-item">Cliente 2</li>
@@ -96,9 +98,10 @@
                 </div>
             </div>
             <div id="pedidos" class="tab-content">
-                <h1>Pedidos</h1>
+                <center><h1>📦 Pedidos 📦</h1></center>
                 <div class="border p-3">
-                    <h2>Lista de Pedidos</h2>
+                    <center><h2>📝 Lista de Pedidos 📝</h2></center>
+                    <button class="btn btn-outline-primary" style="margin: 10px;">✅ Agregar</button>
                     <ul class="list-group">
                         <li class="list-group-item">Pedido 1</li>
                         <li class="list-group-item">Pedido 2</li>
@@ -107,9 +110,9 @@
                 </div>
             </div>
             <div id="configuracion" class="tab-content">
-                <h1>Configuración</h1>
+                <center><h1>⚙️ Configuración ⚙️</h1></center>
                 <div class="border p-3">
-                    <h2>Opciones de Configuración</h2>
+                    <center><h2>🔧 Opciones de Configuración 🔧</h2></center>
                     <p>Aquí puedes ajustar las configuraciones del sistema.</p>
                     <!-- Formulario de configuración -->
                     <form>
@@ -121,7 +124,7 @@
                             <label for="setting2" class="form-label">Configuración 2</label>
                             <input type="text" class="form-control" id="setting2" placeholder="Valor 2">
                         </div>
-                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        <button type="submit" class="btn btn-outline-primary">✅ Guardar Cambios</button>
                     </form>
                 </div>
             </div>
